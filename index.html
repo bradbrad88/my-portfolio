@@ -8,5 +8,111 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Brad Teague - Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <div class="flex-wrapper">
+      <header>
+        <div class="title">
+          <h1>Brad Teague - Portfolio</h1>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <section id="projects">
+          <h2>Projects</h2>
+          <p>Click on the projects below to view them live!</p>
+          <div class="grid-wrapper projects">
+            <article class="project">
+              <a href="#">
+                <div class="desc">
+                  <h2>React Photography</h2>
+                  <p>
+                    PERN stack project similar to Instagram. Create your own albums with the
+                    freedom to display images uniquely.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img src="./assets/images/photography.jpg" alt="" /></div
+              ></a>
+            </article>
+            <article class="project">
+              <a href="#">
+                <div class="desc">
+                  <h2>Satisfactory Planner</h2>
+                  <p>
+                    PERN stack designed to assist with high-level planning of factories for the
+                    game, Satisfactory.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img src="./assets/images/satisfactory.webp" alt="" /></div
+              ></a>
+            </article>
+            <article class="project">
+              <a href="#">
+                <div class="desc">
+                  <h2>Lorem, ipsum.</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                    architecto.
+                  </p>
+                </div>
+                <div class="image-container">
+                  <img src="./assets/images/placeholder.jpg" alt="" /></div
+              ></a>
+            </article>
+          </div>
+        </section>
+        <section id="about">
+          <h2>About Me</h2>
+          <h3>Professional</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vitae numquam, itaque
+          in ipsam temporibus et, dolorum repellendus odit illo, non aliquam unde magnam?
+          Soluta recusandae est facilis nobis ipsa.
+          <p></p>
+          <h3>Personal</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nam harum
+            reprehenderit quos aliquam ipsum ex, ab modi? Modi blanditiis dolores
+            necessitatibus dolore, ipsum enim inventore? Reprehenderit excepturi necessitatibus
+            dolore!
+          </p>
+        </section>
+        <section id="contact">
+          <h2>Get in contact!</h2>
+          <form id="contactForm" name="contactForm" action="#contact">
+            <p>
+              <label for="">Preferred Name:</label>
+              <input id="contactName" name="contactName" type="text" />
+            </p>
+            <p>
+              <label for="contactEmail">Email Address:</label>
+              <input id="contactEmail" name="contactEmail" type="email" />
+            </p>
+            <p>
+              <label for="contactPhone">Phone number:</label>
+              <input id="contactPhone" name="contactPhone" type="tel" />
+            </p>
+            <p>
+              <label for="messageBody"></label>
+              <textarea name="messageBody" id="messageBody" cols="30" rows="10"></textarea>
+            </p>
+            <input type="submit" />
+          </form>
+        </section>
+      </main>
+      <footer>Created by Brad Teague</footer>
+    </div>
+  </body>
 </html>
