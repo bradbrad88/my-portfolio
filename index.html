@@ -9,110 +9,127 @@
     <title>Brad Teague - Portfolio</title>
   </head>
   <body>
-    <div class="flex-wrapper">
-      <header>
-        <div class="title">
-          <h1>Brad Teague - Portfolio</h1>
+    <nav id="navbar" class="open">
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#">Resume</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <header id="header">
+      <div class="header-content">
+        <div class="image">
+          <img src="assets/images/profileImg.png" alt="" />
         </div>
-      </header>
-      <nav>
+        <div class="title">
+          <h1>Brad Teague</h1>
+          <h2>Full Stack Developer</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <h3>Professional</h3>
+        <p>
+          Previously working in hospitality, I took charge of a hotel and its team of
+          approximately 25 employees immediately prior to the pandemic.
+        </p>
+        <p>
+          Working hard to foster a fun, respectful and inclusive culture, the team and I
+          achieved some fantastic successes despite the difficult times we faced.
+        </p>
+        <p>
+          Using skills learned in my own time, I developed programs to assist the team in
+          efficiently tackling tasks including stock ordering, compliance tracking and
+          accounting.
+        </p>
+        <p></p>
+        <h3>Personal</h3>
+        <p>Some pass-times I enjoy are:</p>
         <ul>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#">Resume</a>
-          </li>
+          <li>Drumming - anything unique or interesting</li>
+          <li>Sports - basketball and taekwondo</li>
+          <li>Games - rocket league or most rpgs</li>
+          <li>Spending time with the family</li>
         </ul>
-      </nav>
-      <main>
-        <section id="projects">
-          <h2>Projects</h2>
-          <p>Click on the projects below to view them live!</p>
-          <div class="grid-wrapper projects">
-            <article class="project">
-              <a href="#">
-                <div class="desc">
-                  <h2>React Photography</h2>
-                  <p>
-                    PERN stack project similar to Instagram. Create your own albums with the
-                    freedom to display images uniquely.
-                  </p>
-                </div>
-                <div class="image-container">
-                  <img src="./assets/images/photography.jpg" alt="" /></div
-              ></a>
-            </article>
-            <article class="project">
-              <a href="#">
-                <div class="desc">
-                  <h2>Satisfactory Planner</h2>
-                  <p>
-                    PERN stack designed to assist with high-level planning of factories for the
-                    game, Satisfactory.
-                  </p>
-                </div>
-                <div class="image-container">
-                  <img src="./assets/images/satisfactory.webp" alt="" /></div
-              ></a>
-            </article>
-            <article class="project">
-              <a href="#">
-                <div class="desc">
-                  <h2>Lorem, ipsum.</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
-                    architecto.
-                  </p>
-                </div>
-                <div class="image-container">
-                  <img src="./assets/images/placeholder.jpg" alt="" /></div
-              ></a>
-            </article>
-          </div>
-        </section>
-        <section id="about">
-          <h2>About Me</h2>
-          <h3>Professional</h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vitae numquam, itaque
-          in ipsam temporibus et, dolorum repellendus odit illo, non aliquam unde magnam?
-          Soluta recusandae est facilis nobis ipsa.
-          <p></p>
-          <h3>Personal</h3>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Click on the projects below to view them live!</p>
+        <div class="grid-wrapper projects">
+          <article class="project">
+            <a href="#">
+              <div class="desc">
+                <h2>React Photography</h2>
+                <p>
+                  PERN stack project similar to Instagram. Create your own albums with the
+                  freedom to display images uniquely.
+                </p>
+              </div>
+              <div class="image-container">
+                <img src="./assets/images/photography.jpg" alt="" /></div
+            ></a>
+          </article>
+          <article class="project">
+            <a href="#">
+              <div class="desc">
+                <h2>Satisfactory Planner</h2>
+                <p>
+                  PERN stack designed to assist with high-level planning of factories for the
+                  game, Satisfactory.
+                </p>
+              </div>
+              <div class="image-container">
+                <img src="./assets/images/satisfactory.webp" alt="" /></div
+            ></a>
+          </article>
+          <article class="project">
+            <a href="#">
+              <div class="desc">
+                <h2>Lorem, ipsum.</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, architecto.
+                </p>
+              </div>
+              <div class="image-container">
+                <img src="./assets/images/placeholder.jpg" alt="" /></div
+            ></a>
+          </article>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Get in contact!</h2>
+        <form id="contactForm" name="contactForm" action="#contact">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nam harum
-            reprehenderit quos aliquam ipsum ex, ab modi? Modi blanditiis dolores
-            necessitatibus dolore, ipsum enim inventore? Reprehenderit excepturi necessitatibus
-            dolore!
+            <label for="">Preferred Name:</label>
+            <input id="contactName" name="contactName" type="text" />
           </p>
-        </section>
-        <section id="contact">
-          <h2>Get in contact!</h2>
-          <form id="contactForm" name="contactForm" action="#contact">
-            <p>
-              <label for="">Preferred Name:</label>
-              <input id="contactName" name="contactName" type="text" />
-            </p>
-            <p>
-              <label for="contactEmail">Email Address:</label>
-              <input id="contactEmail" name="contactEmail" type="email" />
-            </p>
-            <p>
-              <label for="contactPhone">Phone number:</label>
-              <input id="contactPhone" name="contactPhone" type="tel" />
-            </p>
-            <p>
-              <label for="messageBody"></label>
-              <textarea name="messageBody" id="messageBody" cols="30" rows="10"></textarea>
-            </p>
-            <input type="submit" />
-          </form>
-        </section>
-      </main>
-      <footer>Created by Brad Teague</footer>
-    </div>
+          <p>
+            <label for="contactEmail">Email Address:</label>
+            <input id="contactEmail" name="contactEmail" type="email" />
+          </p>
+          <p>
+            <label for="contactPhone">Phone number:</label>
+            <input id="contactPhone" name="contactPhone" type="tel" />
+          </p>
+          <p>
+            <label for="messageBody"></label>
+            <textarea name="messageBody" id="messageBody" cols="30" rows="10"></textarea>
+          </p>
+          <input type="submit" />
+        </form>
+      </section>
+    </main>
+    <footer>Created by Brad Teague</footer>
   </body>
 </html>
