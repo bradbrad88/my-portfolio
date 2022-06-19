@@ -1,0 +1,167 @@
+:root {
+  --green: rgb(123, 165, 77);
+  --dark: rgb(28, 28, 28);
+}
+
+/* set global font properties and background */
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--dark);
+  color: white;
+  font-size: 20px;
+}
+
+/* ensure images stay sized to their containers */
+img {
+  max-width: 100%;
+}
+
+/* ##################  NAV BAR  ################## */
+nav {
+  position: fixed;
+  z-index: 1;
+}
+
+nav a {
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 200ms;
+}
+
+/* ##################  HEADER  ################## */
+/* position main title heading and subheading */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+/* responsive title using vw units */
+.title {
+  font-size: 10vw;
+  font-weight: 300;
+}
+
+header h1 {
+  font-weight: inherit;
+  margin-bottom: 0.2em;
+  line-height: 1;
+}
+
+header h2 {
+  font-weight: inherit;
+  color: rgba(255, 255, 255, 0.446);
+  font-size: 50%;
+}
+
+/* style profile image */
+header img {
+  background-color: var(--green);
+  border-radius: 50%;
+  border: white 10px solid;
+  max-width: 280px;
+}
+
+/* ##################  SECTIONS - GLOBAL  ################## */
+/* keep main content contained to a width that is easy to read */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* set spacing of sections and headings */
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  font-size: 220%;
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  font-size: 150%;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+p {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+section ul {
+  padding: 0 2rem;
+  list-style-type: disc;
+}
+
+@media screen and (max-width: 600px) {
+  /* re-arrange the title image and text for mobile display */
+  .header-content {
+    flex-direction: column;
+  }
+  /* set title above image */
+  header .title {
+    font-size: 12vw;
+    order: -1;
+  }
+  header h2 {
+    text-align: center;
+  }
+
+  /* create a mobile friendly nav bar */
+  /* position fixed to screen bottom for single-handed use */
+  nav {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    background-color: rgb(95, 64, 139);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px black;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  nav li {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* create a dividing line between nav bar items */
+  nav li:not(:last-of-type) {
+    border-right: ridge 2px rgba(255, 255, 255, 0.122);
+  }
+  nav a {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  nav {
+    top: 0;
+    right: 0;
+    padding: 1rem;
+  }
+  nav ul {
+    display: flex;
+    gap: 3rem;
+    font-size: 100%;
+  }
+  nav a:hover {
+    color: var(--green);
+  }
+  .header-content {
+    margin-top: 2rem;
+  }
+}
