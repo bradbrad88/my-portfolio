@@ -101,27 +101,56 @@
       </section>
       <section id="contact">
         <h2>Get in contact!</h2>
-        <form id="contactForm" name="contactForm" action="#contact">
+        <form
+          id="contactForm"
+          name="contactForm"
+          action="#contact"
+          autocomplete="on"
+          method="post"
+        >
           <p>
-            <label for="">Preferred Name:</label>
-            <input id="contactName" name="contactName" type="text" />
+            <label for="">
+              <input
+                id="contactName"
+                name="contactName"
+                type="text"
+                placeholder=" "
+                required
+              /><span>Preferred Name</span></label
+            >
           </p>
           <p>
-            <label for="contactEmail">Email Address:</label>
-            <input id="contactEmail" name="contactEmail" type="email" />
+            <label for="contactEmail">
+              <input
+                id="contactEmail"
+                name="contactEmail"
+                type="email"
+                autocomplete="email"
+                placeholder=" "
+                required
+              /><span>Email Address</span></label
+            >
           </p>
           <p>
-            <label for="contactPhone">Phone number:</label>
-            <input id="contactPhone" name="contactPhone" type="tel" />
+            <label for="contactPhone">
+              <input id="contactPhone" name="contactPhone" type="tel" placeholder=" " /><span
+                >Phone number</span
+              ></label
+            >
           </p>
           <p>
-            <label for="messageBody"></label>
-            <textarea name="messageBody" id="messageBody" cols="30" rows="10"></textarea>
+            <label for="messageBody">
+              <textarea name="messageBody" id="messageBody" rows="2" placeholder=" "></textarea
+              ><span>Message</span></label
+            >
           </p>
-          <input type="submit" />
+          <p>
+            <input type="submit" value="Send Message" />
+          </p>
         </form>
       </section>
     </main>
-    <footer>Created by Brad Teague</footer>
+    <footer>Created by Brad Teague 2022</footer>
+    <script src="contact.js"></script>
   </body>
 </html>
